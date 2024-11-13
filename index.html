@@ -3,41 +3,59 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="src/style.css" />
     <title>GabiWeather App</title>
   </head>
-  <body>
-    <header>
-      <form action="">
-        <input type="search" placeholder="Enter with a city" />
-        <input type="submit" value="Search" />
-      </form>
-    </header>
-
-    <main>
-      <div>
-        <h1>Paris</h1>
-        <p>
-          Wednesday 13:42, overcast clouds
-          <br />
-          Humidity: 77%, Wind: 5.14km/h
-        </p>
-      </div>
-      <div>🌈 9 °C</div>
-    </main>
-
-    <footer>
-      The project was coded by
-      <a href="https://github.com/babiangeloni" target="_blank">
-        Gabriela Angeloni</a
-      >,is
-      <a href="https://github.com/babiangeloni/GAbiWeatherApp" target="_blank"
-        >open-sourced on GitHub</a
-      >
-      and
-      <a href="https://gaweatherapp.netlify.app/" target="_blank"
-        >hosted on Netlify</a
-      >
-    </footer>
+ <body>
+    <div class="weather-app">
+      <header>
+        <form class="search-form">
+          <input
+            type="search"
+            placeholder="Enter a city.."
+            required
+            class="search-form-input"
+          />
+          <input type="submit" value="Search" class="search-form-button" />
+        </form>
+      </header>
+      <main>
+        <div class="weather-app-data">
+          <div>
+            <h1 class="weather-app-city">Paris</h1>
+            <p class="weather-app-details">
+              Tuesday 14:49, scattered clouds
+              <br />
+              Humidity: <strong>66%</strong>, Wind: <strong>3.13km/h</strong>
+            </p>
+          </div>
+          <div class="weather-app-temperature-container">
+            <div class="weather-app-icon">🌤️</div>
+            <div class="weather-app-temperature">12</div>
+            <div class="weatehr-app-unit">°C</div>
+          </div>
+        </div>
+      </main>
+      
+      <footer>
+        The project was coded by
+        <a href="https://github.com/babiangeloni" target="_blank">
+          Gabriela Angeloni</a
+        >,is
+        <a href="https://github.com/babiangeloni/GAbiWeatherApp" target="_blank"
+          >open-sourced on GitHub</a
+        >
+        and
+        <a href="https://gaweatherapp.netlify.app/" target="_blank"
+          >hosted on Netlify</a
+        >
+      </footer>
+    </div>
   </body>
 </html>
