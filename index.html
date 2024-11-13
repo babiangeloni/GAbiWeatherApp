@@ -15,11 +15,12 @@
   <body>
     <div class="weather-app">
       <header>
-        <form class="search-form">
+        <form class="search-form" id="search-form">
           <input
             type="search"
             placeholder="Enter a city.."
             required
+            id="search-form-input"
             class="search-form-input"
           />
           <input type="submit" value="Search" class="search-form-button" />
@@ -28,7 +29,7 @@
       <main>
         <div class="weather-app-data">
           <div>
-            <h1 class="weather-app-city">Paris</h1>
+            <h1 class="weather-app-city" id="city">Paris</h1>
             <p class="weather-app-details">
               Tuesday 14:49, scattered clouds
               <br />
@@ -45,16 +46,20 @@
 
       <footer>
         This project was coded by
-        <a href="https://github.com/matthieua/" target="_blank"> Matt Delac</a>,
-        is
-        <a href="https://github.com/matthieua/meteo" target="_blank"
+        <a href="hhttps://github.com/babiangeloni" target="_blank">
+          Gabriela Angeloni</a
+        >, is
+        <a
+          href="https://github.com/babiangeloni/GAbiWeatherApp/tree/main/"
+          target="_blank"
           >open-sourced on GitHub</a
         >
         and
-        <a href="https://meteo-shecodes-app.netlify.app/" target="_blank"
+        <a href="https://gaweatherapp.netlify.app/" target="_blank"
           >hosted on Netlify</a
         >
       </footer>
     </div>
+    <script src="src/index.js"></script>
   </body>
 </html>
